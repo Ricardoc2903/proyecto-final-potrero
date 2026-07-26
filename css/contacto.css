@@ -1,0 +1,151 @@
+.contact-header {
+  color: white;
+  background: var(--forest);
+}
+
+.contact-page {
+  padding: 95px 0 112px;
+}
+
+.contact-intro {
+  max-width: 850px;
+  margin-bottom: 65px;
+}
+
+.contact-intro h1 {
+  margin-bottom: 20px;
+  font-size: clamp(3rem, 6vw, 5.3rem);
+  letter-spacing: -0.055em;
+}
+
+.contact-intro > p:not(.eyebrow) {
+  max-width: 620px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 1.08rem;
+}
+
+.contact-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+.social-panel,
+.form-panel {
+  padding: clamp(30px, 5vw, 58px);
+}
+
+.social-panel {
+  background: var(--sand);
+}
+
+.form-panel {
+  color: white;
+  background: var(--forest);
+}
+
+.social-panel h2,
+.form-panel h2 {
+  margin-bottom: 18px;
+  font-size: clamp(2rem, 3.4vw, 3rem);
+}
+
+.social-panel > p:not(.eyebrow) {
+  max-width: 430px;
+  color: var(--muted);
+}
+
+.form-panel > p:not(.eyebrow) {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.social-links {
+  margin-top: 35px;
+  border-top: 1px solid rgba(24, 53, 47, 0.18);
+}
+
+.social-link {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 3px 18px;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(24, 53, 47, 0.18);
+  text-decoration: none;
+}
+
+.social-link strong {
+  font-size: 0.9rem;
+}
+
+.social-link span {
+  color: var(--muted);
+  font-size: 0.81rem;
+}
+
+.social-link b {
+  grid-row: 1 / 3;
+  grid-column: 2;
+  align-self: center;
+  color: var(--clay);
+  font-size: 1.25rem;
+}
+
+.coming-soon-form {
+  margin-top: 30px;
+}
+
+.coming-soon-form fieldset {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.coming-soon-form label {
+  display: block;
+  margin: 16px 0 6px;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.coming-soon-form input,
+.coming-soon-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  background: rgba(255, 255, 255, 0.08);
+  color: white;
+  font: inherit;
+}
+
+.coming-soon-form fieldset:disabled {
+  opacity: 0.55;
+}
+
+.coming-soon-form button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 14px;
+  border: 0;
+  background: #e8a579;
+  color: #66402d;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  cursor: not-allowed;
+}
+
+@media (max-width: 760px) {
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-page {
+    padding: 70px 0 75px;
+  }
+}
