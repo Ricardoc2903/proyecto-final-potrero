@@ -279,6 +279,19 @@ h2 {
   color: rgba(255, 255, 255, 0.86);
 }
 
+.card-content a {
+  display: inline-block;
+  margin-top: 12px;
+  color: white;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  color: var(--clay);
+}
+
 .experience {
   display: grid;
   grid-template-columns: 1fr 1fr;
