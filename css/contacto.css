@@ -1,3 +1,4 @@
+
 .contact-header {
   color: white;
   background: var(--forest);
@@ -91,6 +92,10 @@
   font-size: 1.25rem;
 }
 
+.social-link:hover strong {
+  color: var(--clay);
+}
+
 .coming-soon-form {
   margin-top: 30px;
 }
@@ -119,6 +124,12 @@
   background: rgba(255, 255, 255, 0.08);
   color: white;
   font: inherit;
+  resize: vertical;
+}
+
+.coming-soon-form input::placeholder,
+.coming-soon-form textarea::placeholder {
+  color: rgba(103, 101, 101, 0.7);
 }
 
 .coming-soon-form fieldset:disabled {
@@ -138,14 +149,4 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   cursor: not-allowed;
-}
-
-@media (max-width: 760px) {
-  .contact-content {
-    grid-template-columns: 1fr;
-  }
-
-  .contact-page {
-    padding: 70px 0 75px;
-  }
 }
