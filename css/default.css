@@ -444,7 +444,7 @@ footer {
 }
 
 .footer-info {
-  text-align: right;
+  text-align: center;
 }
 
 .footer-info .logo {
@@ -538,9 +538,10 @@ footer {
     padding: 75px 0;
   }
   .footer-content {
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 12px;
+    grid-template-columns: 1fr;
+    gap: 35px;
+    justify-items: center;  
+    align-items: center;
   }
 }
 
