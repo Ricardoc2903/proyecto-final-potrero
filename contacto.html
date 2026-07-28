@@ -52,15 +52,17 @@
                 <form class="coming-soon-form">
                     <fieldset disabled>
                         <label class="form-label" for="nombre">Nombre</label>
-                        <input class="form-control" id="nombre" type="text" placeholder="Tu nombre">
+                        <input class="disabled form-control" id="nombre" type="text" placeholder="Tu nombre">
 
                         <label class="form-label" for="correo">Correo electrónico</label>
-                        <input class="form-control" id="correo" type="email" placeholder="tuemail@ejemplo.com">
+                        <input class="disabled form-control" id="correo" type="email" placeholder="tuemail@ejemplo.com">
 
                         <label class="form-label" for="mensaje">Mensaje</label>
-                        <textarea class="form-control" id="mensaje" rows="4" placeholder="Contanos qué destino te interesa"></textarea>
+                        <textarea class="disabled form-control" id="mensaje" rows="4" placeholder="Contanos qué destino te interesa"></textarea>
 
-                        <button class="btn btn-secondary" type="submit">Enviar consulta</button>
+                        <div class="disabled">
+                          <button class=" btn btn-secondary" type="submit">Enviar consulta</button>
+                        </div>
                     </fieldset>
                 </form>
             </div>

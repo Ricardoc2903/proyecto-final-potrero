@@ -150,3 +150,7 @@
   text-transform: uppercase;
   cursor: not-allowed;
 }
+
+.disabled:hover {
+  cursor: not-allowed;
+}
